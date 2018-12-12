@@ -23,22 +23,13 @@ Route::get('/', 'PagesController@home');
     return view('welcome')->withTasks($tasks);
 }); */
 
-Route::resource('projects','ProjectsController');
+Route::resource('projects','ProjectsController')->middleware('can:update,project');
 
 Route::post('/projects/{project}/tasks','ProjectTasksController@store');
 
 Route::post('/completed-tasks/{task}','CompletedTasksController@store');
 Route::delete('/completed-tasks/{task}','CompletedTasksController@destroy');
 
-/*
+Auth::routes();
 
-
-
-
-Route::get('/contact', 'PagesController@contact');
-Route::get('/about', 'PagesController@about');
-
-Route::get('/projects', 'ProjectsController@index');
-Route::post('/projects', 'ProjectsController@store');
-Route::get('/projects/create', 'ProjectsController@create');
-*/
+Route::get('/home', 'HomeController@index')->name('home');
