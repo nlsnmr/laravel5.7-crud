@@ -2,7 +2,19 @@
 @section('title', 'show')
 @section('content')
 
-    <h1 class="title">edit</h1>
+<nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+        <ul>
+          <li><a href="/projects">Projects list</a></li>
+          <li><a href="/projects/{{$project->id}}">Project details</a></li>
+          <li class="is-active"><a href="#" aria-current="page">Edit project</a></li>
+        </ul>
+      </nav>
+
+    <div class="box">
+        <div class="content">
+            <h1 class="title">Edit project</h1>
+        </div>
+    </div>
     <form method="POST" action="/projects/{{$project->id}}" style="margin-bottom:1em;">
         {{ csrf_field() }}
         {{ method_field('PATCH') }}

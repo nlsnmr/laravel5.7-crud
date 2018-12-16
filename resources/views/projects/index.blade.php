@@ -1,20 +1,25 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-</head>
-<body>
-    <h1>projects</h1>
+@extends('layout')
+@section('title', 'Projects')
+@section('content')
 
+<nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
     <ul>
-        @foreach($projects as $project)
-            <a href="/projects/{{$project->id}}">
-                <li>{{ $project }}</li>   
-            </a>
-       @endforeach 
+        <li class="is-active"><a href="#" aria-current="page">Projects list</a></li>
     </ul>
-</body>
-</html>
+</nav>
+<div class="box">
+    <h1 class="title">Projects list</h1>
+</div>
+    @foreach($projects as $project)
+        <a class="box" href="/projects/{{$project->id}}">
+            <div class="content">
+                <p>
+                    <strong>{{$project->title}}</strong><br>
+                    {{$project->description}}<hr>
+                    <small>Created: {{$project->created_at}}</small>
+                </p>
+            </div>
+        </a>
+        <br>
+    @endforeach 
+@endsection

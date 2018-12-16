@@ -12,16 +12,8 @@
 */
 
 Route::get('/', 'PagesController@home');
-
- //Route::get('/', function () {
-/*     return view('welcome', [
-        'tasks' => ['a','b']
-    ]); */
-
-/*    $tasks = ['a','b'];
-
-    return view('welcome')->withTasks($tasks);
-}); */
+Route::get('/contact', 'PagesController@contact');
+Route::get('/about', 'PagesController@about');
 
 Route::resource('projects','ProjectsController')->middleware('can:update,project');
 

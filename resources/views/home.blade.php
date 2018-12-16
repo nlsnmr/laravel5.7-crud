@@ -13,8 +13,19 @@
                             {{ session('status') }}
                         </div>
                     @endif
-
                     You are logged in!
+                    <div class="card-item">
+                        <div>
+                            <a href="/projects">
+                                See project list
+                            </a>
+                        <div>
+                        <div>
+                            <a href="/projects/create">
+                                Create project
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

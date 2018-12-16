@@ -8,9 +8,7 @@ class PagesController extends Controller
 {
     public function home()
     {
-        return view('welcome',[
-            'tasks' => ['a','b']
-        ]);
+        return view('welcome');
     }
 
     public function about()

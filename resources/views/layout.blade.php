@@ -13,16 +13,34 @@
     </style>
 </head>
 <body>
-    <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-
+    <nav class="navbar is-light" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand">
+            <div class="navbar-item">
+                :: NLSN ::.
+            </div>
+        </div>
+            
+        <div id="navbarBasic" class="navbar-menu">
+            <div class="navbar-start">
+                <a href="/" class="navbar-item">
+                    Home
+                </a>
+                <a href="/about" class="navbar-item">
+                    About
+                </a>
+                <a href="/contact" class="navbar-item">
+                    Contact
+                </a>
+            </div>
+            <div class="navbar-end">
+                <a href="/login" class="navbar-item">
+                    <strong>Admin</strong>
+                </a>
+            </div>
+        </div>
+    </nav>
     <div class="container">
         @yield('content')
     </div>
-    
-
 </body>
 </html>

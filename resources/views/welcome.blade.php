@@ -2,12 +2,6 @@
 @section('title', 'Welcome')
 @section('content')
 
-    <h1>my first web</h1>
-
-    <ul>
-        @foreach($tasks as $task)
-            <li>{{ $task }}</li>
-       @endforeach 
-    </ul>
-
+    <h1>home page</h1>
+    
 @endsection
