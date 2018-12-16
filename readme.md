@@ -1,7 +1,7 @@
 # Laravel 5.7 CRUD
 
 ### A basic app with Laravel that manage Projects and Tasks
-Using Laravel framework and MySQL database, the app allow's to manage projects and project tasks, displying them on the frontend after user logged.  
+Using Laravel framework and MySQL database, the app allow's to manage projects and project tasks, displying them on the frontend.  
 By default this app can send email (set configuration on `.env` file) after each project creation.  
 
 __Laravel version__: 5.7  
