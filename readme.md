@@ -4,11 +4,15 @@
 Using Laravel framework and MySQL database, the app allow's to manage projects and project tasks, displying them on the frontend after user logged.  
 By default this app can send email (set configuration on `.env` file) after each project creation.  
 
-This project/app have the debugger `Laravel Telescope` available. Check [Laravel Telescope (GitHub)](https://github.com/laravel/telescope "Telescope (GitHub)") for extra info about `Laravel Telescope`.
-
 __Laravel version__: 5.7  
 __CSS framework__: Bluma  
 __Database__: Mysql  
+
+
+This project/app have the debugger `Laravel Telescope` available. Check [Laravel Telescope (GitHub)](https://github.com/laravel/telescope "Telescope (GitHub)") for extra info about `Laravel Telescope`.
+
+### __Laravel Telescope:__
+![Preview](https://monosnap.com/image/czTqOEboYWKrFhXlbVLgsbcODAgCJ5.png)
 
 ### __Projects list page:__
 ![Preview](https://monosnap.com/image/OwCVNDLjp2HzDTLQ41pXi24X5fgPOp.png)
