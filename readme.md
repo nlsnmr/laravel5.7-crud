@@ -4,6 +4,8 @@
 Using Laravel framework and MySQL database, the app allow's to manage projects and project tasks, displying them on the frontend after user logged.  
 By default this app can send email (set configuration on `.env` file) after each project creation.  
 
+This project/app have the debugger `Laravel Telescope` available. Check [Laravel Telescope (GitHub)](https://github.com/laravel/telescope "Telescope (GitHub)") for extra info about `Laravel Telescope`.
+
 __Laravel version__: 5.7  
 __CSS framework__: Bluma  
 __Database__: Mysql  
@@ -50,4 +52,6 @@ Finally, run the development server:
 php artisan serve
 ```
 
-The app will be available at **127.0.0.1:8000**
+The app will be available at: **127.0.0.1:8000**  
+The [Laravel Telescope (GitHub)](https://github.com/laravel/telescope "Telescope (GitHub)") will be available at: **127.0.0.1:8000/telescope**
+
