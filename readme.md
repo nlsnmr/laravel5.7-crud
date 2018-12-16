@@ -18,29 +18,30 @@ __Database__: Mysql
 First, clone the repository to your local machine:
 
 ```bash
-git clone https://github.com/nlsnmr/
-```
-Create enviroment and activate:
-```bash
-
+git clone https://github.com/nlsnmr/laravel5.7-crud.git
 ```
 
-Install the requirements:
+Install dependencies:
 ```bash
-
+composer install
 ```
 
 Setup the local configurations:
-
+> By default this app can send email after each project creation.  
+> On the `.env` file is set with `MAIL_DRIVER=log`, when set with smtp, username, etc it should send normally the email
 ```bash
 cp .env.example .env
 ```
 
-Create the database:
-
+After database creation:
 ```bash
-
+php artisan migrate
 ```
+
+Generate key:
+```bash
+php artisan key:generate
+````
 
 Finally, run the development server:
 
